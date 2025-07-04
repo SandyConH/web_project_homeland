@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 34px;
+}
+.header__logo {
+  width: 32px;
+  height: 32px;
+}
+.header__title {
+  font-size: 14.94px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+/* tablet */
+@media screen and (max-width: 984px) and (min-width: 768px) {
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+}
