@@ -36,39 +36,60 @@
 
 /* tablet */
 @media screen and (max-width: 984px) and (min-width: 768px) {
-}.intro-section {
+}
+.intro-section {
   width: 984px;
   margin: 0 auto;
   padding-top: 94px;
 }
 .intro-section__title {
   width: 707px;
-  font-family: "Inter";
-  font-weight: 900;
-  font-size: 54px;
-  line-height: 58px;
+  font-size: 45px;
+  line-height: 49px;
 }
 .intro-section__paragraph {
-  font-family: "Inter";
-  font-weight: 400;
+  width: 720px;
   font-size: 24px;
-  width: 738px;
   line-height: 34px;
 }
 .intro-section__autor {
+  width: 732px;
   font-family: "Inter";
   font-weight: 400;
   font-size: 24px;
-  width: 738px;
   line-height: 34px;
   text-align: right;
 }
 .intro-section__description {
-  font-family: "Inter";
   font-size: 16px;
-  width: 738px;
+  width: 720px;
   line-height: 163%;
+}
 
 /* mobile */
 @media screen and (max-width: 768px) {
+  .intro-section {
+    width: 288px;
+  }
+  .intro-section__title {
+    width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .intro-section__paragraph {
+    width: 288px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .intro-section__autor {
+    width: 288px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: right;
+  }
+  .intro-section__description {
+    font-size: 16px;
+    width: 288px;
+    line-height: 163%;
+  }
 }
