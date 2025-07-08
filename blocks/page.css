@@ -4,3 +4,10 @@
   min-height: 100vh;
   min-width: 320px;
 }
+/* tablet */
+@media screen and (max-width: 984px) and (min-width: 768px) {
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+}
