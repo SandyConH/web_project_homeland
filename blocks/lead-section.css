@@ -36,6 +36,7 @@
     max-width: 530px;
     font-size: 75px;
     line-height: 79px;
+    margin: 0 auto;
   }
   .lead-section__subtitle {
     max-width: 720px;
@@ -56,8 +57,10 @@
   }
   .lead-section__title {
     max-width: 228px;
+    padding-top: 35px;
     font-size: 40px;
     line-height: 44px;
+    margin: 0 auto;
   }
   .lead-section__subtitle {
     max-width: 288px;
