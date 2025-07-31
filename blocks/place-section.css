@@ -1,0 +1,169 @@
+.places-section {
+  padding: 40px 0;
+  color: #f0f0f0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.place {
+  max-width: 984px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 0;
+  margin-bottom: 60px;
+  padding: 0 40px;
+  align-items: start;
+}
+.place__header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.place__title {
+  font-family: "Inter";
+  font-size: 72px;
+  line-height: 76px;
+  margin: 0;
+  color: #ffffff;
+  max-width: 460px;
+}
+
+.place__artist-info {
+  width: 456px;
+  text-align: left;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.place__artist-heading {
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 400;
+  color: #aaaaaa;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.place__artist-name {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0 0 5px;
+  color: #ffffff;
+}
+
+.place__main-content {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto;
+  gap: 20px 48px;
+  align-items: start;
+}
+.place__image-wrapper {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.place__image {
+  width: 100%;
+  max-height: 460px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.place__image:hover {
+  filter: opacity(0.5);
+}
+
+.place__nft-button {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #0278fe, #003a7b);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.place__nft-button:hover {
+  background-image: none;
+  background-color: #003a7b;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.place__text-content {
+  width: 484px;
+  grid-column: 2;
+  grid-row: 1;
+}
+.place__paragraph {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 163%;
+  margin: 0 0 25px;
+  color: #ffffff;
+}
+
+/* tablet */
+@media screen and (max-width: 984px) and (min-width: 768px) {
+  .place {
+    grid-template-columns: 350px 1fr; /* Reduce el ancho de la columna de la imagen */
+    gap: 20px 30px; /* Ajusta el espacio entre elementos */
+    padding: 0 30px; /* Reduce el padding lateral */
+  }
+  .place__title {
+    font-size: 3.5em; /* Ajusta el tamaño del título */
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .place {
+    /* Cambiar a un layout de una sola columna apilada usando flexbox para simplificar */
+    display: flex;
+    flex-direction: column; /* Apila todos los elementos verticalmente */
+    gap: 30px; /* Espacio entre los bloques principales */
+    padding: 0 20px; /* Márgenes laterales más pequeños */
+  }
+  .place__header-content {
+    flex-direction: column; /* Apila el título y la info del artista */
+    align-items: flex-start; /* Alinea todo a la izquierda */
+    gap: 15px; /* Espacio entre título y info artista */
+    margin-bottom: 0; /* Elimina el margen inferior extra del header en móvil */
+  }
+
+  .place__title {
+    font-size: 2.5em; /* Reduce aún más el tamaño del título */
+    text-align: left; /* Asegura que esté alineado a la izquierda */
+    max-width: none; /* Elimina cualquier límite de ancho anterior */
+  }
+
+  .place__artist-info {
+    text-align: left; /* Asegura que la info del artista también esté a la izquierda */
+  }
+
+  .place__image-wrapper {
+    width: 100%; /* La imagen y botón ocupan todo el ancho disponible */
+  }
+
+  .place__nft-button {
+    width: 100%; /* Botón al ancho completo en móvil */
+    text-align: center; /* Centra el texto del botón */
+  }
+}
