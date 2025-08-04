@@ -3,6 +3,7 @@
   background-color: #2a2c2f;
   min-height: 100vh;
   min-width: 320px;
+  box-sizing: border-box;
 }
 /* tablet */
 @media screen and (max-width: 984px) and (min-width: 768px) {

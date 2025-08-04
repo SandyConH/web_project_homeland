@@ -123,47 +123,74 @@
 /* tablet */
 @media screen and (max-width: 984px) and (min-width: 768px) {
   .place {
-    grid-template-columns: 350px 1fr; /* Reduce el ancho de la columna de la imagen */
-    gap: 20px 30px; /* Ajusta el espacio entre elementos */
-    padding: 0 30px; /* Reduce el padding lateral */
+    max-width: 720px;
+    padding: 0 10px;
+  }
+  .place__artist-info {
+    width: 352px;
+  }
+
+  .place__main-content {
+    grid-template-columns: 340px 1fr;
+    gap: 16px 24px;
+  }
+  .place__image {
+    max-height: 340px;
   }
   .place__title {
-    font-size: 3.5em; /* Ajusta el tamaño del título */
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 288px;
   }
+  .place__text-content {
+    width: 352px;
+  }
+  .place__paragraph {
+  font-size: 16px;
+  line-height: 163%;}
 }
 
 /* mobile */
 @media screen and (max-width: 768px) {
   .place {
-    /* Cambiar a un layout de una sola columna apilada usando flexbox para simplificar */
-    display: flex;
-    flex-direction: column; /* Apila todos los elementos verticalmente */
-    gap: 30px; /* Espacio entre los bloques principales */
-    padding: 0 20px; /* Márgenes laterales más pequeños */
+    max-width: 320px;
+    padding: 0;
   }
   .place__header-content {
-    flex-direction: column; /* Apila el título y la info del artista */
-    align-items: flex-start; /* Alinea todo a la izquierda */
-    gap: 15px; /* Espacio entre título y info artista */
-    margin-bottom: 0; /* Elimina el margen inferior extra del header en móvil */
-  }
-
-  .place__title {
-    font-size: 2.5em; /* Reduce aún más el tamaño del título */
-    text-align: left; /* Asegura que esté alineado a la izquierda */
-    max-width: none; /* Elimina cualquier límite de ancho anterior */
-  }
-
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  margin-bottom: 20px;
+}
   .place__artist-info {
-    text-align: left; /* Asegura que la info del artista también esté a la izquierda */
+    width: 100%;
   }
 
+  .place__main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:16px;
+  }
   .place__image-wrapper {
-    width: 100%; /* La imagen y botón ocupan todo el ancho disponible */
+  max-width: 320px;
+  box-sizing: border-box;
+}
+  .place__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
   }
-
-  .place__nft-button {
-    width: 100%; /* Botón al ancho completo en móvil */
-    text-align: center; /* Centra el texto del botón */
+  .place__title {
+    font-size: 24px;
+    line-height: 28px;
   }
+  .place__text-content {
+    max-width: 320px;
+  }
+  .place__paragraph {
+  font-size: 16px;
+  line-height: 163%;
+}
 }
